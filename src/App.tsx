@@ -10,8 +10,8 @@ function Button(props: ButtonProps) {
 }
 */
 
-import { Widget } from "./components/Widget";
+import { Feedget } from "./components/Feedget";
 
 export function App() {
-  return <Widget />
+  return <Feedget />
 }
