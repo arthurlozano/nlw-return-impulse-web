@@ -39,7 +39,7 @@ export function WidgetForm() {
   const [feedbackType, setFeedbackType] = useState<FeedbackType | null>(null);
   const [feedbackSent, setFeedbackSent] = useState(false);
 
-  function handleRestarFeedback() {
+  function handleRestartFeedback() {
     setFeedbackSent(false);
     setFeedbackType(null);
   }
@@ -48,7 +48,7 @@ export function WidgetForm() {
     <div className="bg-zinc-900 p-4 relative rounded-2xl mb-4 flex flex-col items-center shadow-lg w-[calc(100vw-2rem)] md:w-auto">
 
       {feedbackSent ? (
-        <FeedbackSuccessStep onFeedbackRestartRequested={handleRestarFeedback}/>
+        <FeedbackSuccessStep onFeedbackRestartRequested={handleRestartFeedback} />
       ) : (
           <>
             {!feedbackType ? (
@@ -56,8 +56,8 @@ export function WidgetForm() {
             ) : (
               <FeedbackContentStep
                 feedbackType={feedbackType}
-                onFeedbackRestartRequested={handleRestarFeedback}
-                onFeedbackSent={() => setFeedbackSent(true)}
+                  onFeedbackRestartRequested={handleRestartFeedback}
+                  onFeedbackSent={() => setFeedbackSent(true)}
               />
             )}
           </>
