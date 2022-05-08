@@ -1,3 +1,4 @@
+Acesse o projeto através do link: https://feedget-example.vercel.app/
 ### Este projeto usa:
 
 - Vite
@@ -8,6 +9,7 @@
 # Feedget
 **Widget de Feedbacks**
 *Este projeto foi desenvolvido na semana **NLW-Return** na trilha **Impulse** *      
+
 
 ![](https://i.ibb.co/NpH15sC/Feedget-modes.png)
 
